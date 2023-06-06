@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">foodtracker-android</string>
+    <string name="menu_label_analytics">Analytics</string>
+    <string name="menu_label_diary">Diary</string>
+    <string name="menu_label_profile">Profile</string>
+    <string name="greeting_name">Welcome to healthier\nlife, %1$s!</string>
+    <string name="kcal">Kcal</string>
+    <string name="proteins">Proteins</string>
+    <string name="carbs">Carbs</string>
+    <string name="fats">Fats</string>
+    <string name="success">Success</string>
+    <string name="not_success">Not success</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

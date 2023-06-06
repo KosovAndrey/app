@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.product.ProductFragment"
+    android:id="@+id/productFragment">
+
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkBoxFavourite"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:button="@drawable/selector_favourite_item"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewName"
+        app:layout_constraintStart_toEndOf="@+id/textViewName"
+        app:layout_constraintTop_toTopOf="@+id/textViewName"
+        app:useMaterialThemeColors="false" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Tomato" />
+
+    <TextView
+        android:id="@+id/textViewKcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName"
+        tools:text="324 kcal" />
+
+    <TextView
+        android:id="@+id/textViewProteinsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proteins"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCarbsName"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCarbsName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewCarbsName" />
+
+    <TextView
+        android:id="@+id/textViewProteins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewProteinsName"
+        app:layout_constraintStart_toStartOf="@+id/textViewProteinsName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProteinsName"
+        tools:text="32.3g" />
+
+    <TextView
+        android:id="@+id/textViewCarbsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="Carbs"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKcal" />
+
+    <TextView
+        android:id="@+id/textViewCarbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCarbsName"
+        app:layout_constraintStart_toStartOf="@+id/textViewCarbsName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCarbsName"
+        tools:text="68.1g" />
+
+    <TextView
+        android:id="@+id/textViewFatsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fats"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCarbsName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewCarbsName"
+        app:layout_constraintTop_toTopOf="@+id/textViewCarbsName" />
+
+    <TextView
+        android:id="@+id/textViewFats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFatsName"
+        app:layout_constraintStart_toStartOf="@+id/textViewFatsName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFatsName"
+        tools:text="11.9g" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="100g"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
+        app:layout_constraintStart_toStartOf="@+id/buttonLogin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:paddingStart="31dp"
+            android:textSize="22sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="33dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/green"
+        android:textSize="22sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

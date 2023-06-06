@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="4dp"
+    android:layout_margin="8dp">
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkBoxFavourite"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:button="@drawable/selector_favourite_item"
+        android:layout_marginStart="4dp"
+        app:useMaterialThemeColors="false"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewName"
+        app:layout_constraintStart_toEndOf="@+id/textViewName"
+        app:layout_constraintTop_toTopOf="@+id/textViewName" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:text="Scrambled eggs" />
+
+    <TextView
+        android:id="@+id/textViewProteins"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:layout_marginStart="15dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="end"
+        android:textSize="16sp"
+        tools:text="122.4" />
+
+    <TextView
+        android:id="@+id/textViewCarbs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="15dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="end"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:text="201.2" />
+
+    <TextView
+        android:id="@+id/textViewFats"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="15dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="end"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:text="45.4" />
+    <TextView
+        android:id="@+id/textViewKcal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="15dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="end"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:text="67" />
+
+</LinearLayout>

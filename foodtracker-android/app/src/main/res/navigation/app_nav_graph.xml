@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.foodtracker.app.presentation.splash.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_auth_nav_graph"
+            app:destination="@id/auth_nav_graph"
+            app:popUpTo="@id/app_nav_graph"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_splashFragment_to_diary_nav_graph"
+            app:destination="@id/diary_nav_graph"
+            app:popUpTo="@id/app_nav_graph"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <include app:graph="@navigation/auth_nav_graph" />
+    <include app:graph="@navigation/diary_nav_graph" />
+    <include app:graph="@navigation/analytics_nav_graph" />
+    <include app:graph="@navigation/profile_nav_graph" />
+</navigation>
